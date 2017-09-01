@@ -1,5 +1,8 @@
-function confirmEnding(str, target) {
-    console.log(str.length, target.length);
+function chunkArrayInGroups(arr, size) {
+    // Break it up.
+    var result = [];
+    var childArr = [];
+ 
 }
-
-confirmEnding("he he", "mon");
+  
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
