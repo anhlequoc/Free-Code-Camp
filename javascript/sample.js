@@ -1,19 +1,20 @@
-function bouncer(arr) {
-    // Don't show a false ID to this bouncer.
-    arr = arr.filter(function(e) {
-        if (e === false || e === null || e === 0 || e === "" || e === "" || e === undefined) {
-            return false;
-        } else if (isNaN(e)) {
-            return false;
-        }        
-        return true;
-    });
-    
-    console.log(arr);  
-    return arr;
-  }
-  bouncer([7, "ate", "", false, 9]);
-  bouncer(["a", "b", "c"])
-  bouncer([false, null, 0, NaN, undefined, ""]);
+function destroyer(arr) {
+    // Remove all the values    
+    for (var i = 1; i<arguments.length; i++) {   
+        var number = arguments[i];     
+        var result = arguments[0].filter(function(e) {            
+            if (e === number) {
+                console.log(e + "=" + number + ", false");
+                return false;
+            }
+            console.log(e + "!=" + number + "true");
+            return true;
+        });
+    }
 
+    console.log(result);
+    return result;
+  }
+  
+  destroyer([1, 2, 3, 1, 2, 3], 2, 3);
   
