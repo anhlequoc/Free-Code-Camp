@@ -1,8 +1,7 @@
 function getQuote() {
-    
-    console.log('fine');
+   console.log('fine');
 }
 
 $(document).ready(function() {
     getQuote();
-})
+});
